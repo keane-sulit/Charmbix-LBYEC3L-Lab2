@@ -1,0 +1,450 @@
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ; Initialization
+Warning[203]: Found opcode in column 1. (BSF)
+0000   1683           00002 BSF 03h, 5
+Warning[203]: Found opcode in column 1. (MOVLW)
+0001   3004           00003 MOVLW 0x04
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0002   0085           00004 MOVWF 85h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0003   304A           00005 MOVLW 0x4A
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0004   0086           00006 MOVWF 86h
+Warning[203]: Found opcode in column 1. (BCF)
+0005   1283           00007 BCF 03h, 5
+                      00008 
+0006                  00009 ZERO:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0006   301C           00010 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+0007   0085           00011 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0008   304B           00012 MOVLW 0x4B
+Warning[203]: Found opcode in column 1. (MOVWF)
+0009   0086           00013 MOVWF 06h
+000A   2856           00014     goto START
+                      00015 
+000B                  00016 ONE:
+Warning[203]: Found opcode in column 1. (MOVLW)
+000B   301F           00017 MOVLW 0x1F
+Warning[203]: Found opcode in column 1. (MOVWF)
+000C   0085           00018 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+000D   30CF           00019 MOVLW 0xCF
+Warning[203]: Found opcode in column 1. (MOVWF)
+000E   0086           00020 MOVWF 06h
+000F   2856           00021     goto START
+                      00022 
+0010                  00023 TWO:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0010   301D           00024 MOVLW 0x1D
+Warning[203]: Found opcode in column 1. (MOVWF)
+0011   0085           00025 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0012   306A           00026 MOVLW 0x6A
+Warning[203]: Found opcode in column 1. (MOVWF)
+0013   0086           00027 MOVWF 06h
+0014   2856           00028     goto START
+                      00029 
+0015                  00030 THREE:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0015   301D           00031 MOVLW 0x1D
+Warning[203]: Found opcode in column 1. (MOVWF)
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0016   0085           00032 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0017   30CA           00033 MOVLW 0xCA
+Warning[203]: Found opcode in column 1. (MOVWF)
+0018   0086           00034 MOVWF 06h
+0019   2856           00035     goto START
+                      00036 
+001A                  00037 FOUR:
+Warning[203]: Found opcode in column 1. (MOVLW)
+001A   301E           00038 MOVLW 0x1E
+Warning[203]: Found opcode in column 1. (MOVWF)
+001B   0085           00039 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+001C   30CE           00040 MOVLW 0xCE
+Warning[203]: Found opcode in column 1. (MOVWF)
+001D   0086           00041 MOVWF 06h
+001E   2856           00042     goto START
+                      00043 
+001F                  00044 FIVE:
+Warning[203]: Found opcode in column 1. (MOVLW)
+001F   301C           00045 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+0020   0085           00046 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0021   30DA           00047 MOVLW 0xDA
+Warning[203]: Found opcode in column 1. (MOVWF)
+0022   0086           00048 MOVWF 06h
+0023   2856           00049     goto START
+                      00050 
+0024                  00051 SIX:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0024   301C           00052 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+0025   0085           00053 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0026   305A           00054 MOVLW 0x5A
+Warning[203]: Found opcode in column 1. (MOVWF)
+0027   0086           00055 MOVWF 06h
+0028   2856           00056     goto START
+                      00057 
+0029                  00058 SEVEN:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0029   301D           00059 MOVLW 0x1D
+Warning[203]: Found opcode in column 1. (MOVWF)
+002A   0085           00060 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+002B   30CF           00061 MOVLW 0xCF
+Warning[203]: Found opcode in column 1. (MOVWF)
+002C   0086           00062 MOVWF 06h
+002D   2856           00063     goto START
+                      00064 
+002E                  00065 EIGHT:
+Warning[203]: Found opcode in column 1. (MOVLW)
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+002E   301C           00066 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+002F   0085           00067 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0030   304A           00068 MOVLW 0x4A
+Warning[203]: Found opcode in column 1. (MOVWF)
+0031   0086           00069 MOVWF 06h
+0032   2856           00070     goto START
+                      00071 
+0033                  00072 NINE:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0033   301C           00073 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+0034   0085           00074 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0035   30CA           00075 MOVLW 0xCA
+Warning[203]: Found opcode in column 1. (MOVWF)
+0036   0086           00076 MOVWF 06h
+0037   2856           00077     goto START
+                      00078 
+0038                  00079 A:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0038   301C           00080 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+0039   0085           00081 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+003A   304E           00082 MOVLW 0x4E
+Warning[203]: Found opcode in column 1. (MOVWF)
+003B   0086           00083 MOVWF 06h
+003C   2856           00084     goto START
+                      00085 
+003D                  00086 Bseg:
+Warning[203]: Found opcode in column 1. (MOVLW)
+003D   301E           00087 MOVLW 0x1E
+Warning[203]: Found opcode in column 1. (MOVWF)
+003E   0085           00088 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+003F   305A           00089 MOVLW 0x5A
+Warning[203]: Found opcode in column 1. (MOVWF)
+0040   0086           00090 MOVWF 06h
+0041   2856           00091     goto START
+                      00092 
+0042                  00093 C:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0042   301C           00094 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+0043   0085           00095 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0044   307B           00096 MOVLW 0x7B
+Warning[203]: Found opcode in column 1. (MOVWF)
+0045   0086           00097 MOVWF 06h
+0046   2856           00098     goto START
+                      00099 
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0047                  00100 D:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0047   301F           00101 MOVLW 0x1F
+Warning[203]: Found opcode in column 1. (MOVWF)
+0048   0085           00102 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0049   304A           00103 MOVLW 0x4A
+Warning[203]: Found opcode in column 1. (MOVWF)
+004A   0086           00104 MOVWF 06h
+004B   2856           00105     goto START
+                      00106 
+004C                  00107 E:
+Warning[203]: Found opcode in column 1. (MOVLW)
+004C   301C           00108 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+004D   0085           00109 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+004E   307A           00110 MOVLW 0x7A
+Warning[203]: Found opcode in column 1. (MOVWF)
+004F   0086           00111 MOVWF 06h
+0050   2856           00112     goto START
+                      00113 
+0051                  00114 F:
+Warning[203]: Found opcode in column 1. (MOVLW)
+0051   301C           00115 MOVLW 0x1C
+Warning[203]: Found opcode in column 1. (MOVWF)
+0052   0085           00116 MOVWF 05h
+Warning[203]: Found opcode in column 1. (MOVLW)
+0053   307E           00117 MOVLW 0x7E
+Warning[203]: Found opcode in column 1. (MOVWF)
+0054   0086           00118 MOVWF 06h
+0055   2856           00119     goto START
+                      00120 
+0056                  00121 START:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0056   1886           00122 BTFSC 06h, 1
+0057   2876           00123     goto w_ON ; 1 _ _ _
+0058   2859           00124     goto w_OFF ; 0 _ _ _
+                      00125 
+0059                  00126 w_OFF:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0059   1B06           00127 BTFSC 06h, 6
+005A   2869           00128     goto x_ON ; 0 1 _ _
+005B   285C           00129     goto x_OFF ; 0 0 _ _
+                      00130 
+005C                  00131 x_OFF:
+Warning[203]: Found opcode in column 1. (BTFSC)
+005C   1986           00132 BTFSC 06h, 3
+005D   2864           00133     goto y_ON ; 0 0 1 _
+005E   285F           00134     goto y_OFF ; 0 0 0 _
+                      00135 
+005F                  00136 y_OFF:
+Warning[203]: Found opcode in column 1. (BTFSC)
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+005F   1905           00137 BTFSC 05h, 2
+0060   2863           00138     goto z_ON ; 0 0 0 1
+0061   2862           00139     goto z_OFF ; 0 0 0 0
+                      00140 
+0062                  00141 z_OFF:
+0062   2806           00142     goto ZERO ; 0 0 0 0
+                      00143 
+0063                  00144 z_ON:
+0063   280B           00145     goto ONE ; 0 0 0 1
+                      00146 
+0064                  00147 y_ON:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0064   1905           00148 BTFSC 05h, 2
+0065   2868           00149     goto y_ON_z_ON ; 0 0 1 1
+0066   2867           00150     goto y_ON_z_OFF ; 0 0 1 0
+                      00151 
+0067                  00152 y_ON_z_OFF:
+0067   2810           00153     goto TWO ; 0 0 1 0
+                      00154 
+0068                  00155 y_ON_z_ON:
+0068   2815           00156     goto THREE ; 0 0 1 1
+                      00157 
+0069                  00158 x_ON:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0069   1986           00159 BTFSC 06h, 3
+006A   2871           00160     goto x_ON_y_ON ; 0 1 1 _
+006B   286C           00161     goto x_ON_y_OFF ; 0 1 0 _
+                      00162 
+006C                  00163 x_ON_y_OFF:
+Warning[203]: Found opcode in column 1. (BTFSC)
+006C   1905           00164 BTFSC 05h, 2
+006D   2870           00165     goto x_ON_y_OFF_z_ON ; 0 1 0 1
+006E   286F           00166     goto x_ON_y_OFF_z_OFF ; 0 1 0 0
+                      00167 
+006F                  00168 x_ON_y_OFF_z_OFF:
+006F   281A           00169     goto FOUR ; 0 1 0 0
+                      00170 
+0070                  00171 x_ON_y_OFF_z_ON:
+0070   281F           00172     goto FIVE ; 0 1 0 1
+                      00173 
+0071                  00174 x_ON_y_ON:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0071   1905           00175 BTFSC 05h, 2
+0072   2875           00176     goto x_ON_y_ON_z_ON ; 0 1 1 1
+0073   2874           00177     goto x_ON_y_ON_z_OFF ; 0 1 1 0
+                      00178 
+0074                  00179 x_ON_y_ON_z_OFF:
+0074   2824           00180     goto SIX ; 0 1 1 0
+                      00181 
+0075                  00182 x_ON_y_ON_z_ON:
+0075   2829           00183     goto SEVEN ; 0 1 1 1
+                      00184 
+0076                  00185 w_ON:
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  6
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[203]: Found opcode in column 1. (BTFSC)
+0076   1B06           00186 BTFSC 06h, 6
+0077   2886           00187     goto w_ON_x_ON ; 1 1 _ _
+0078   2879           00188     goto w_ON_x_OFF ; 1 0 _ _
+                      00189 
+0079                  00190 w_ON_x_OFF:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0079   1986           00191 BTFSC 06h, 3
+007A   2881           00192     goto w_ON_x_OFF_y_ON ; 1 0 1 _
+007B   287C           00193     goto w_ON_x_OFF_y_OFF ; 1 0 0 _
+                      00194 
+007C                  00195 w_ON_x_OFF_y_OFF:
+Warning[203]: Found opcode in column 1. (BTFSC)
+007C   1905           00196 BTFSC 05h, 2
+007D   2880           00197     goto w_ON_x_OFF_y_OFF_z_ON ; 1 0 0 1
+007E   287F           00198     goto w_ON_x_OFF_y_OFF_z_OFF ; 1 0 0 0
+                      00199 
+007F                  00200 w_ON_x_OFF_y_OFF_z_OFF:
+007F   282E           00201     goto EIGHT ; 1 0 0 0
+                      00202 
+0080                  00203 w_ON_x_OFF_y_OFF_z_ON:
+0080   2833           00204     goto NINE ; 1 0 0 1
+                      00205 
+0081                  00206 w_ON_x_OFF_y_ON:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0081   1905           00207 BTFSC 05h, 2
+0082   2885           00208     goto w_ON_x_OFF_y_ON_z_ON ; 1 0 1 1
+0083   2884           00209     goto w_ON_x_OFF_y_ON_z_OFF ; 1 0 1 0
+                      00210 
+0084                  00211 w_ON_x_OFF_y_ON_z_OFF:
+0084   2838           00212     goto A ; 1 0 1 0
+                      00213 
+0085                  00214 w_ON_x_OFF_y_ON_z_ON:
+0085   283D           00215     goto Bseg ; 1 0 1 1
+                      00216 
+0086                  00217 w_ON_x_ON:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0086   1986           00218 BTFSC 06h, 3
+0087   288E           00219     goto w_ON_x_ON_y_ON ; 1 1 1 _
+0088   2889           00220     goto w_ON_x_ON_y_OFF ; 1 1 0 _
+                      00221 
+0089                  00222 w_ON_x_ON_y_OFF:
+Warning[203]: Found opcode in column 1. (BTFSC)
+0089   1905           00223 BTFSC 05h, 2
+008A   288D           00224     goto w_ON_x_ON_y_OFF_z_ON ; 1 1 0 1
+008B   288C           00225     goto w_ON_x_ON_y_OFF_z_OFF ; 1 1 0 0
+                      00226 
+008C                  00227 w_ON_x_ON_y_OFF_z_OFF:
+008C   2842           00228     goto C ; 1 1 0 0
+                      00229 
+008D                  00230 w_ON_x_ON_y_OFF_z_ON:
+008D   2847           00231     goto D ; 1 1 0 1
+                      00232 
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  7
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+008E                  00233 w_ON_x_ON_y_ON:
+Warning[203]: Found opcode in column 1. (BTFSC)
+008E   1905           00234 BTFSC 05h, 2
+008F   2892           00235     goto w_ON_x_ON_y_ON_z_ON ; 1 1 1 1
+0090   2891           00236     goto w_ON_x_ON_y_ON_z_OFF ; 1 1 1 0
+                      00237 
+0091                  00238 w_ON_x_ON_y_ON_z_OFF:
+0091   284C           00239     goto E ; 1 1 1 0
+                      00240 
+0092                  00241 w_ON_x_ON_y_ON_z_ON:
+0092   2851           00242     goto F ; 1 1 1 1
+                      00243 
+Warning[205]: Found directive in column 1. (END)
+                      00244 END
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  8
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+A                                 00000038
+Bseg                              0000003D
+C                                 00000042
+D                                 00000047
+E                                 0000004C
+EIGHT                             0000002E
+F                                 00000051
+FIVE                              0000001F
+FOUR                              0000001A
+NINE                              00000033
+ONE                               0000000B
+SEVEN                             00000029
+SIX                               00000024
+START                             00000056
+THREE                             00000015
+TWO                               00000010
+ZERO                              00000006
+__16F84A                          00000001
+__DEBUG                           1
+w_OFF                             00000059
+w_ON                              00000076
+w_ON_x_OFF                        00000079
+w_ON_x_OFF_y_OFF                  0000007C
+w_ON_x_OFF_y_OFF_z_OFF            0000007F
+w_ON_x_OFF_y_OFF_z_ON             00000080
+w_ON_x_OFF_y_ON                   00000081
+w_ON_x_OFF_y_ON_z_OFF             00000084
+w_ON_x_OFF_y_ON_z_ON              00000085
+w_ON_x_ON                         00000086
+w_ON_x_ON_y_OFF                   00000089
+w_ON_x_ON_y_OFF_z_OFF             0000008C
+w_ON_x_ON_y_OFF_z_ON              0000008D
+w_ON_x_ON_y_ON                    0000008E
+w_ON_x_ON_y_ON_z_OFF              00000091
+w_ON_x_ON_y_ON_z_ON               00000092
+x_OFF                             0000005C
+x_ON                              00000069
+x_ON_y_OFF                        0000006C
+x_ON_y_OFF_z_OFF                  0000006F
+x_ON_y_OFF_z_ON                   00000070
+x_ON_y_ON                         00000071
+x_ON_y_ON_z_OFF                   00000074
+x_ON_y_ON_z_ON                    00000075
+y_OFF                             0000005F
+y_ON                              00000064
+y_ON_z_OFF                        00000067
+y_ON_z_ON                         00000068
+z_OFF                             00000062
+z_ON                              00000063
+MPASM  5.51                     EXERCISE2.ASM   2-7-2023  21:24:31         PAGE  9
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+
+0000 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0040 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0080 : XXXXXXXXXXXXXXXX XXX------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:   147
+Program Memory Words Free:   877
+
+
+Errors   :     0
+Warnings :    86 reported,     0 suppressed
+Messages :     2 reported,     0 suppressed
+
+

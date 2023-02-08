@@ -1,0 +1,226 @@
+MPASM  5.51                    EXERCISE1A.ASM   2-2-2023  12:00:15         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ; Access Bank 1
+Warning[203]: Found opcode in column 1. (BSF)
+0000   1683           00002 BSF 03h, 5
+                      00003 ; Set Inputs
+Warning[203]: Found opcode in column 1. (MOVLW)
+0001   3005           00004 MOVLW 0X05
+                      00005 ; Move W to TRISA
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0002   0085           00006 MOVWF 85h
+                      00007 ; Set Outputs
+Warning[203]: Found opcode in column 1. (MOVLW)
+0003   3018           00008 MOVLW 0X18
+                      00009 ; Move W to TRISB
+Warning[203]: Found opcode in column 1. (MOVWF)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0004   0086           00010 MOVWF 86h
+                      00011 ; Go back to Bank 0
+Warning[203]: Found opcode in column 1. (BCF)
+0005   1283           00012 BCF 03h, 5
+                      00013 ; ==============================
+0006                  00014 Start:
+                      00015 ; Test SW1
+Warning[203]: Found opcode in column 1. (BTFSS)
+0006   1D86           00016 BTFSS 06h, 3
+Warning[203]: Found opcode in column 1. (goto)
+0007   2809           00017 goto SW2_OFF ; SW1=0
+Warning[203]: Found opcode in column 1. (goto)
+0008   280C           00018 goto SW2_ON ;SW1=1
+                      00019 
+                      00020 ; Test SW2
+0009                  00021 SW2_OFF: ; WHEN SW1=0
+Warning[203]: Found opcode in column 1. (BTFSS)
+0009   1E06           00022 BTFSS 06h, 4
+Warning[203]: Found opcode in column 1. (goto)
+000A   280F           00023 goto SW3_OFF_OFF ; SW1=0, SW2=0
+Warning[203]: Found opcode in column 1. (goto)
+000B   2812           00024 goto SW3_OFF_ON; SW1=0, SW2=1
+                      00025 
+000C                  00026 SW2_ON: ; WHEN SW1= 1
+Warning[203]: Found opcode in column 1. (BTFSS)
+000C   1E06           00027 BTFSS 06h, 4
+Warning[203]: Found opcode in column 1. (goto)
+000D   2815           00028 goto SW3_ON_OFF ; SW1=1, SW2=0
+Warning[203]: Found opcode in column 1. (goto)
+000E   2818           00029 goto SW3_ON_ON ; SW1=1, SW2=1
+                      00030 
+                      00031 ; Test SW3
+000F                  00032 SW3_OFF_OFF: ; SW1=0, SW2=0
+Warning[203]: Found opcode in column 1. (BTFSS)
+000F   1D05           00033 BTFSS 05h, 2
+Warning[203]: Found opcode in column 1. (goto)
+0010   281B           00034 goto SW4_OFF_OFF_OFF ;  SW1=0, SW2=0; SW3=0
+MPASM  5.51                    EXERCISE1A.ASM   2-2-2023  12:00:15         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[203]: Found opcode in column 1. (goto)
+0011   281E           00035 goto SW4_OFF_OFF_ON ;  SW1=0, SW2=0; SW3=1
+                      00036 
+0012                  00037 SW3_OFF_ON: ; SW1=0, SW2=1
+Warning[203]: Found opcode in column 1. (BTFSS)
+0012   1D05           00038 BTFSS 05h, 2
+Warning[203]: Found opcode in column 1. (goto)
+0013   2821           00039 goto SW4_OFF_ON_OFF ;  SW1=0, SW2=1; SW3=0
+Warning[203]: Found opcode in column 1. (goto)
+0014   2824           00040 goto SW4_OFF_ON_ON ;  SW1=0, SW2=1; SW3=1 
+                      00041 
+0015                  00042 SW3_ON_OFF: ; SW1=1, SW2=0
+Warning[203]: Found opcode in column 1. (BTFSS)
+0015   1D05           00043 BTFSS 05h, 2
+Warning[203]: Found opcode in column 1. (goto)
+0016   2827           00044 goto SW4_ON_OFF_OFF ;  SW1=1, SW2=0; SW3=0
+Warning[203]: Found opcode in column 1. (goto)
+0017   282A           00045 goto SW4_ON_OFF_ON ;  SW1=1, SW2=0; SW3=1
+                      00046 
+0018                  00047 SW3_ON_ON: ; SW1=1, SW2=1
+Warning[203]: Found opcode in column 1. (BTFSS)
+0018   1D05           00048 BTFSS 05h, 2
+Warning[203]: Found opcode in column 1. (goto)
+0019   282D           00049 goto SW4_ON_ON_OFF ;  SW1=1, SW2=1; SW3=0
+Warning[203]: Found opcode in column 1. (goto)
+001A   2830           00050 goto SW4_ON_ON_ON ;  SW1=1, SW2=1; SW3=1
+                      00051 
+                      00052 ; Test SW4
+                      00053 
+001B                  00054 SW4_OFF_OFF_OFF: ;  SW1=0, SW2=0; SW3=0
+Warning[203]: Found opcode in column 1. (BTFSS)
+001B   1C05           00055 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+001C   2833           00056 goto ON ; SW1=0, SW2=0; SW3=0; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+001D   2835           00057 goto OFF ; SW1=0, SW2=0; SW3=0; SW4= 1
+                      00058 
+001E                  00059 SW4_OFF_OFF_ON: ;  SW1=0, SW2=0; SW3=1
+Warning[203]: Found opcode in column 1. (BTFSS)
+001E   1C05           00060 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+001F   2835           00061 goto OFF ; SW1=0, SW2=0; SW3=1; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+0020   2833           00062 goto ON ; SW1=0, SW2=0; SW3=1; SW4= 1
+                      00063 
+0021                  00064 SW4_OFF_ON_OFF: ;  SW1=0, SW2=1; SW3=0
+Warning[203]: Found opcode in column 1. (BTFSS)
+0021   1C05           00065 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+0022   2835           00066 goto OFF ; SW1=0, SW2=1; SW3=0; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+0023   2833           00067 goto ON ; SW1=0, SW2=1; SW3=0; SW4= 1
+                      00068 
+MPASM  5.51                    EXERCISE1A.ASM   2-2-2023  12:00:15         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0024                  00069 SW4_OFF_ON_ON: ;  SW1=0, SW2=1; SW3=1
+Warning[203]: Found opcode in column 1. (BTFSS)
+0024   1C05           00070 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+0025   2833           00071 goto ON ; SW1=0, SW2=1; SW3=1; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+0026   2835           00072 goto OFF ; SW1=0, SW2=1; SW3=1; SW4= 1
+                      00073 
+0027                  00074 SW4_ON_OFF_OFF: ;  SW1=1, SW2=0; SW3=0
+Warning[203]: Found opcode in column 1. (BTFSS)
+0027   1C05           00075 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+0028   2835           00076 goto OFF ; SW1=1, SW2=0; SW3=0; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+0029   2833           00077 goto ON ; SW1=1, SW2=0; SW3=0; SW4= 1
+                      00078 
+002A                  00079 SW4_ON_OFF_ON: ;  SW1=1, SW2=0; SW3=1
+Warning[203]: Found opcode in column 1. (BTFSS)
+002A   1C05           00080 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+002B   2833           00081 goto ON ; SW1=1, SW2=0; SW3=1; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+002C   2835           00082 goto OFF ; SW1=1, SW2=0; SW3=1; SW4= 1
+                      00083 
+002D                  00084 SW4_ON_ON_OFF: ;  SW1=1, SW2=1; SW3=0
+Warning[203]: Found opcode in column 1. (BTFSS)
+002D   1C05           00085 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+002E   2833           00086 goto ON ; SW1=1, SW2=1; SW3=0; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+002F   2835           00087 goto OFF ; SW1=1, SW2=1; SW3=0; SW4= 1
+                      00088 
+0030                  00089 SW4_ON_ON_ON: ;  SW1=1, SW2=1; SW3=1
+Warning[203]: Found opcode in column 1. (BTFSS)
+0030   1C05           00090 BTFSS 05h, 0
+Warning[203]: Found opcode in column 1. (goto)
+0031   2835           00091 goto OFF ; SW1=1, SW2=1; SW3=1; SW4= 0
+Warning[203]: Found opcode in column 1. (goto)
+0032   2833           00092 goto ON ; SW1=1, SW2=1; SW3=1; SW4= 1    
+                      00093 
+0033                  00094 ON:
+Warning[203]: Found opcode in column 1. (BSF)
+0033   1406           00095 BSF 06h, 0
+Warning[203]: Found opcode in column 1. (goto)
+0034   2806           00096 goto Start
+                      00097 
+0035                  00098 OFF:
+Warning[203]: Found opcode in column 1. (BCF)
+0035   1006           00099 BCF 06h, 0
+Warning[203]: Found opcode in column 1. (goto)
+0036   2806           00100 goto Start
+                      00101 
+Warning[205]: Found directive in column 1. (END)
+MPASM  5.51                    EXERCISE1A.ASM   2-2-2023  12:00:15         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00102 END
+MPASM  5.51                    EXERCISE1A.ASM   2-2-2023  12:00:15         PAGE  5
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+OFF                               00000035
+ON                                00000033
+SW2_OFF                           00000009
+SW2_ON                            0000000C
+SW3_OFF_OFF                       0000000F
+SW3_OFF_ON                        00000012
+SW3_ON_OFF                        00000015
+SW3_ON_ON                         00000018
+SW4_OFF_OFF_OFF                   0000001B
+SW4_OFF_OFF_ON                    0000001E
+SW4_OFF_ON_OFF                    00000021
+SW4_OFF_ON_ON                     00000024
+SW4_ON_OFF_OFF                    00000027
+SW4_ON_OFF_ON                     0000002A
+SW4_ON_ON_OFF                     0000002D
+SW4_ON_ON_ON                      00000030
+Start                             00000006
+__16F84A                          00000001
+__DEBUG                           1
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXX---------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    55
+Program Memory Words Free:   969
+
+
+Errors   :     0
+Warnings :    56 reported,     0 suppressed
+Messages :     2 reported,     0 suppressed
+
+

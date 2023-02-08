@@ -1,0 +1,123 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Tue Feb 07 21:24:32 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000126
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000092      
+            147 out of 1094 program addresses used, program memory utilization is 13%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                        A   0x000038    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     Bseg   0x00003d    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        C   0x000042    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        D   0x000047    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        E   0x00004c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    EIGHT   0x00002e    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        F   0x000051    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     FIVE   0x00001f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     FOUR   0x00001a    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     NINE   0x000033    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                      ONE   0x00000b    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    SEVEN   0x000029    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                      SIX   0x000024    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    START   0x000056    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    THREE   0x000015    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                      TWO   0x000010    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     ZERO   0x000006    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    w_OFF   0x000059    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     w_ON   0x000076    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+               w_ON_x_OFF   0x000079    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+         w_ON_x_OFF_y_OFF   0x00007c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+   w_ON_x_OFF_y_OFF_z_OFF   0x00007f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+    w_ON_x_OFF_y_OFF_z_ON   0x000080    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          w_ON_x_OFF_y_ON   0x000081    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+    w_ON_x_OFF_y_ON_z_OFF   0x000084    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+     w_ON_x_OFF_y_ON_z_ON   0x000085    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                w_ON_x_ON   0x000086    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          w_ON_x_ON_y_OFF   0x000089    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+    w_ON_x_ON_y_OFF_z_OFF   0x00008c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+     w_ON_x_ON_y_OFF_z_ON   0x00008d    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+           w_ON_x_ON_y_ON   0x00008e    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+     w_ON_x_ON_y_ON_z_OFF   0x000091    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+      w_ON_x_ON_y_ON_z_ON   0x000092    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    x_OFF   0x00005c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     x_ON   0x000069    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+               x_ON_y_OFF   0x00006c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+         x_ON_y_OFF_z_OFF   0x00006f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          x_ON_y_OFF_z_ON   0x000070    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                x_ON_y_ON   0x000071    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          x_ON_y_ON_z_OFF   0x000074    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+           x_ON_y_ON_z_ON   0x000075    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    y_OFF   0x00005f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     y_ON   0x000064    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+               y_ON_z_OFF   0x000067    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                y_ON_z_ON   0x000068    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    z_OFF   0x000062    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     z_ON   0x000063    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     ZERO   0x000006    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                      ONE   0x00000b    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                      TWO   0x000010    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    THREE   0x000015    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     FOUR   0x00001a    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     FIVE   0x00001f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                      SIX   0x000024    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    SEVEN   0x000029    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    EIGHT   0x00002e    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     NINE   0x000033    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        A   0x000038    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     Bseg   0x00003d    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        C   0x000042    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        D   0x000047    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        E   0x00004c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                        F   0x000051    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    START   0x000056    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    w_OFF   0x000059    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    x_OFF   0x00005c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    y_OFF   0x00005f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                    z_OFF   0x000062    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     z_ON   0x000063    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     y_ON   0x000064    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+               y_ON_z_OFF   0x000067    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                y_ON_z_ON   0x000068    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     x_ON   0x000069    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+               x_ON_y_OFF   0x00006c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+         x_ON_y_OFF_z_OFF   0x00006f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          x_ON_y_OFF_z_ON   0x000070    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                x_ON_y_ON   0x000071    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          x_ON_y_ON_z_OFF   0x000074    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+           x_ON_y_ON_z_ON   0x000075    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                     w_ON   0x000076    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+               w_ON_x_OFF   0x000079    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+         w_ON_x_OFF_y_OFF   0x00007c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+   w_ON_x_OFF_y_OFF_z_OFF   0x00007f    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+    w_ON_x_OFF_y_OFF_z_ON   0x000080    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          w_ON_x_OFF_y_ON   0x000081    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+    w_ON_x_OFF_y_ON_z_OFF   0x000084    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+     w_ON_x_OFF_y_ON_z_ON   0x000085    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+                w_ON_x_ON   0x000086    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+          w_ON_x_ON_y_OFF   0x000089    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+    w_ON_x_ON_y_OFF_z_OFF   0x00008c    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+     w_ON_x_ON_y_OFF_z_ON   0x00008d    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+           w_ON_x_ON_y_ON   0x00008e    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+     w_ON_x_ON_y_ON_z_OFF   0x000091    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+      w_ON_x_ON_y_ON_z_ON   0x000092    program     static X:\TERM 7\LBYEC3L\1_LAB ACTIVITIES\Experiment 2\MPLAB\Exercise 2\Exercise2.asm
+
+
